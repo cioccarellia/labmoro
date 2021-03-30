@@ -29,7 +29,7 @@ while 1:
         count = 0
         for it in elements:
             count += message.lower().count(it)
-        return count
+        return len(message) - count
 
 
     responseForClient = str(process(decodedMessage))
